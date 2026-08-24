@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+    background-image: url("https://t.ctcdn.com.br/EPYGStiMMYjd-W0Y7C5nDpwDVWk=/640x360/smart/i598772.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clock {
+    width: 500px;
+    padding: 40px;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(8px);
+}
+
+.clock h1 {
+    margin-bottom: 30px;
+
+    color: #fff;
+
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.time-box {
+    min-width: 130px;
+    padding: 20px 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 15px;
+}
+
+.time-box span {
+    display: block;
+
+    color: #fff;
+
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.time-box p {
+    margin-top: 8px;
+
+    color: #fff;
+
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .clock {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .clock h1 {
+        font-size: 26px;
+    }
+
+    .time {
+        gap: 8px;
+    }
+
+    .time-box {
+        min-width: 0;
+        flex: 1;
+        padding: 15px 5px;
+    }
+
+    .time-box span {
+        font-size: 32px;
+    }
+
+    .time-box p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --accent: #ff7a18;
+    --accent-2: #af002d;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.45)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3gfKMIoQNuI64lNagGkMB9zAc-QrjebDawlSm8e-qn1okBrz4uQQptyZ&s=10') no-repeat center/cover;
+}
+
+.wrapper {
+    width: 420px;
+    padding: 30px 40px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -15px 0 15px;
+    font-size: 14px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember-forgot input {
+    accent-color: #fff;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(175,0,45,0.18);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px rgba(175,0,45,0.22);
+}
+
+.input-box input:focus {
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25) inset;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:20px;
+    color:#fff;
+}
+
+.wrapper p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.wrapper p a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wrapper p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        padding: 25px 30px;
+    }
+
+    .wrapper h1 {
+        font-size: 30px;
+    }
+}
+
+/* Background now uses `cover` for all screen sizes to fill the viewport. */
